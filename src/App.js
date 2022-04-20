@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { Helmet } from 'react-helmet-async';
+import { BrowserRouter } from 'react-router-dom';
+import './App.scss';
+import ContactForm from './components/ContactForm';
+import FixedNavbar from './components/FixedNavbar';
+import HotspotBanner from './components/HotspotBanner';
+import Footer from './components/Footer'
+import Event from './components/Event'
+import ExclusiveContent from './components/ExclusiveContent'
+import ReactFullpage from '@fullpage/react-fullpage';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Helmet>
+        <title>Gameloft</title>
+      </Helmet>
+      <div className="main">
+        <FixedNavbar />
+        <ReactFullpage scrollingSpeed={1000} licenseKey = {'YOUR_KEY_HERE'} render={({ state, fullpageApi }) => {
+          return (
+            <ReactFullpage.Wrapper>
+              <HotspotBanner />
+              <ContactForm />
+              <Event />
+              <ExclusiveContent />
+              <Footer />
+            </ReactFullpage.Wrapper>
+          )
+          }}
+            />
+
+      </div>
+    </BrowserRouter>
   );
 }
 
