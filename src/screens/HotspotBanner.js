@@ -1,11 +1,11 @@
 import React from 'react'
-import Rating from './Rating'
+import Rating from '../components/Rating'
 
 export default function HotspotBanner() {
   return (
     <>
       <div className="hotspot-banner">
-        <img src="../assets/images/bg-1.jpg" alt="bg-1" />
+        <img src="https://img.enderws.com/gameloft/bg-1.jpg" alt="bg-1" />
         <div className="hotspot-banner__description-wrapper">
           <div className="hotspot-banner__description-content">
             <h1>GAMELOFT GAME</h1>
@@ -21,13 +21,13 @@ export default function HotspotBanner() {
             </div>
             <div className="store-buttons__items">
               <a href="/">
-                <img src="../assets/images/btn-1.png" alt="btn-1" className="img-btn-1" />
+                <img src="https://img.enderws.com/gameloft/btn-1.png" alt="btn-1" className="img-btn-1" />
               </a>
               <a href="/">
-                <img src="../assets/images/btn-2.png" alt="btn-2" className="img-btn-2" />
+                <img src="https://img.enderws.com/gameloft/btn-2.png" alt="btn-2" className="img-btn-2" />
               </a>
               <a href="/">
-                <img src="../assets/images/btn-3.png" alt="btn-3" className="img-btn-3" />
+                <img src="https://img.enderws.com/gameloft/btn-3.png" alt="btn-3" className="img-btn-3" />
               </a>
             </div>
           </div>
@@ -40,13 +40,13 @@ export default function HotspotBanner() {
             </div>
             <div className="store-buttons-mobile__items">
               <a href="/">
-                <img src="../assets/images/btn-1.png" alt="btn-1" className="img-btn-1" />
+                <img src="https://img.enderws.com/gameloft/btn-1.png" alt="btn-1" className="img-btn-1" />
               </a>
               <a href="/">
-                <img src="../assets/images/btn-2.png" alt="btn-2" className="img-btn-2" />
+                <img src="https://img.enderws.com/gameloft/btn-2.png" alt="btn-2" className="img-btn-2" />
               </a>
               <a href="/">
-                <img src="../assets/images/btn-3.png" alt="btn-3" className="img-btn-3" />
+                <img src="https://img.enderws.com/gameloft/btn-3.png" alt="btn-3" className="img-btn-3" />
               </a>
             </div>
           </div>

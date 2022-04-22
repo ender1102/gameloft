@@ -36,7 +36,7 @@ export default function ContactForm() {
         <div className="contact-form-wrapper">
             <div className="contact-form__column">
                 <div className="contact-form__image">
-                    <img src="../assets/images/minion.png" alt="minion" />
+                    <img src="https://img.enderws.com/gameloft/minion.png" alt="minion" />
                 </div>
                 <div className="contact-form__form">
                     <h2>Stay in the Know!</h2>

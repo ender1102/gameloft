@@ -5,10 +5,10 @@ export default function FixedNavbar() {
         <>
             <div className="header">
                 <a href="/" className="header__logo">
-                    <img src="../assets/images/logo.svg" alt="logo" />
+                    <img src="https://img.enderws.com/gameloft/logo.svg" alt="logo" />
                 </a>
                 <div className="header__menu">
-                    <img src="../assets/images/burger.svg" alt="burger" />
+                    <img src="https://img.enderws.com/gameloft/burger.svg" alt="burger" />
                 </div>
             </div>
             <div className="social-icons">

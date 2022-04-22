@@ -8,7 +8,7 @@ export default function Footer() {
                 <div className='footer-wrapper'>
                     <div className='footer__left'>
                         <div className="footer__left__img">
-                            <img src="../assets/images/gameloft.png" alt="logo-footer" />
+                            <img src="https://img.enderws.com/gameloft/gameloft.png" alt="logo-footer" />
                         </div>
                         <div className="footer__left__social">
                             <h2>Follow Us</h2>
@@ -27,7 +27,7 @@ export default function Footer() {
                         </div>
                         <div className="footer__left__language">
                             <select id="language" name="language" defaultValue="english" required>
-                                <option value="english">&#xf57d; English </option>
+                                <option value="english">&#xf57d; English</option>
                                 <option value="vietnam">&#xf57e; Vietnamese</option>
                             </select>
                         </div>
@@ -62,7 +62,7 @@ export default function Footer() {
             <div className="footer-mobile">
                 <div className="footer-mobile__social">
                     <div className="footer-mobile__social__title">
-                        <h5>Follow Us</h5>
+                        <h2>Follow Us</h2>
                     </div>
                     <div className="footer-mobile__social__icon">
                         <a href='https://www.facebook.com/GameloftViet/?brand_redir=216238295505' target="_blank" rel="noreferrer noopener">
@@ -81,7 +81,7 @@ export default function Footer() {
                 </div>
 
                 <div className="footer-mobile__img">
-                    <img src="../assets/images/gameloft.png" alt="logo-footer" />
+                    <img src="https://img.enderws.com/gameloft/gameloft.png" alt="logo-footer" />
                 </div>
                 <div className='footer-mobile-wrapper'>
                     <div className='footer-mobile__left'>
