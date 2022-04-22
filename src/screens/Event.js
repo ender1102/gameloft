@@ -57,7 +57,7 @@ export default function Event() {
     }, [])
 
     return (
-        <div className="event">
+        <section className="event">
             <div className="event__title-wrapper">
                 <div className="event__title">
                     <h1>SPEACIAL EVENTS & PROMOTIONAL</h1>
@@ -106,6 +106,6 @@ export default function Event() {
                             </Swiper>
                 }
             </div>
-        </div>
+        </section>
     )
 }

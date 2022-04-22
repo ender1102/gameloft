@@ -3,8 +3,7 @@ import React from 'react'
 export default function Footer() {
     return (
         <>
-
-            <div className="footer">
+            <section className="footer">
                 <div className='footer-wrapper'>
                     <div className='footer__left'>
                         <div className="footer__left__img">
@@ -57,9 +56,9 @@ export default function Footer() {
                         <p>©2020 Gameloft. All rights reserved. Gameloft and the Gameloft logo are trademarks of Gameloft in the U.S. and/or other countries. <br></br>All other trademarks are the property of their respective owners.</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div className="footer-mobile">
+            <section className="footer-mobile">
                 <div className="footer-mobile__social">
                     <div className="footer-mobile__social__title">
                         <h2>Follow Us</h2>
@@ -110,7 +109,7 @@ export default function Footer() {
                         <p>©2020 Gameloft. All rights reserved. Gameloft and the Gameloft logo are trademarks of Gameloft in the U.S. and/or other countries. <br></br>All other trademarks are the property of their respective owners.</p>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     )
 }

@@ -4,7 +4,7 @@ import Rating from '../components/Rating'
 export default function HotspotBanner() {
   return (
     <>
-      <div className="hotspot-banner">
+      <section className="hotspot-banner">
         <img src="https://img.enderws.com/gameloft/bg-1.jpg" alt="bg-1" />
         <div className="hotspot-banner__description-wrapper">
           <div className="hotspot-banner__description-content">
@@ -32,8 +32,8 @@ export default function HotspotBanner() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="store-buttons-mobile-wrapper">
+      </section>
+      <section className="store-buttons-mobile-wrapper">
           <div className="store-buttons-mobile__content">
             <div className="store-buttons-mobile__label">
               Download latest version
@@ -50,7 +50,7 @@ export default function HotspotBanner() {
               </a>
             </div>
           </div>
-        </div>
+        </section>
     </>
   )
 }

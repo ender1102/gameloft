@@ -55,7 +55,7 @@ export default function ExclusiveContent() {
     }, [])
 
     return (
-        <div className="exclusive-content">
+        <section className="exclusive-content">
             <div className="exclusive-content__title-wrapper">
                 <div className="exclusive-content__title">
                     <h1>EXCLUSIVE GAME CONTENT</h1>
@@ -97,6 +97,6 @@ export default function ExclusiveContent() {
                             </Swiper>
                 }
             </div>
-        </div>
+        </section>
     )
 }
