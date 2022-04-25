@@ -1,0 +1,124 @@
+.exclusive-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    @include mobile {
+        height: 600px;
+    }
+    .exclusive-content__title-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        @include mobile {
+            margin-left: 20px;
+            height: 200px;
+        }
+        .exclusive-content__title {
+            width: 1028px;
+            color: #2699fb;
+            margin-top: 7vh;
+            @include mobile {
+                width: 100%;
+                height: 100%;
+                margin-top: 0;
+            }
+            > h1 {
+                font-family: 'Montserrat-Bold';
+                font-size: 45px;
+                @include mobile {
+                    font-size: 25px;
+                }
+            }
+            > p {
+                font-family: 'Montserrat-Regular';
+                font-size: 25px;
+                @include mobile {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .exclusive-content__slider {
+        height: 70%;
+        z-index: 0;
+        @include mobile {
+            margin-top: 30px;
+            height: 320px;
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+
+            .swiper-wrapper {
+                height: 70vh;
+                @include mobile {
+                    height: 294px;
+                    width: 95%;
+                }
+                .exclusive-content__slider__items {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .exclusive-content__item {
+                        .exclusive-content__button {
+                            display: flex;
+                            justify-content: flex-end;
+                            > i {
+                                margin-top: 2vh;
+                                margin-right: 2vh;
+                                border: 0px solid transparent;
+                                background-color: rgb(255, 255, 255);
+                                border-radius: 50%;
+                                width: 25px;
+                                height: 25px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                cursor: pointer;
+                                position: absolute;
+                                &:hover {
+                                    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                    outline: 4px solid rgba(255, 255, 255, 0.36);
+                                    color: #2699fb;
+                                    transition: 0.2s;
+                                    @include mobile {
+                                        outline: none;
+                                        outline: 4px solid rgba(255, 255, 255, 0.36);
+                                        box-sizing: border-box;
+                                        transition: 0.2s;
+                                    }
+                                }
+                            }
+                        }
+                        .exclusive-content__image {
+                            width: 650px !important;
+                            height: 372px;
+                            @include mobile {
+                                height: 182px;
+                                width: 318px !important;
+                            }
+                        }
+                    }
+                }
+            }
+            .swiper-button-prev {
+                top: 97%;
+                left: 47%;
+                @include mobile {
+                    top: 94%;
+                    left: 38%;
+                }
+            }
+            .swiper-button-next {
+                top: 97%;
+                right: 47%;
+                @include mobile {
+                    top: 94%;
+                    right: 38%;
+                }
+            }
+        }
+    }
+}

@@ -4,10 +4,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { saveAs } from 'file-saver'
 
 // Import Swiper styles
-import "swiper/scss";
-import "swiper/scss/pagination";
-import 'swiper/scss/navigation';
-import 'swiper/scss/autoplay'
+import "swiper/css";
+import "swiper/css/pagination";
+import 'swiper/css/navigation';
+import 'swiper/css/autoplay'
 
 // import required modules
 import { Navigation, Pagination, Autoplay } from 'swiper';
@@ -71,8 +71,8 @@ export default function ExclusiveContent() {
                             <Swiper
                                 slidesPerView={isMobile ? 1 : 3}
                                 spaceBetween={200}
-                                centeredSlidesBounds={true}
-                                rewind={false}
+                                centeredSlides={true}
+                                loop={true}
                                 pagination={{
                                     type: 'fraction',
                                 }}

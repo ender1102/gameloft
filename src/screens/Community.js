@@ -7,10 +7,10 @@ import MessageBox from './../components/MessageBox'
 
 
 // Import Swiper styles
-import "swiper/scss";
-import "swiper/scss/pagination";
-import 'swiper/scss/navigation';
-import 'swiper/scss/autoplay'
+import "swiper/css";
+import "swiper/css/pagination";
+import 'swiper/css/navigation';
+import 'swiper/css/autoplay'
 
 // import required modules
 import { Navigation, Pagination, Autoplay } from 'swiper';
@@ -77,9 +77,7 @@ export default function Community() {
                                 :
                                 <Swiper
                                     slidesPerView={isMobile ? 3 : 6}
-                                    spaceBetween={isMobile ? 10 : 80}
-                                    centeredSlidesBounds={false}
-                                    rewind={false}
+                                    spaceBetween={isMobile ? 10 : 30}
                                     navigation={true}
                                     autoplay={{
                                         delay: 3000,
@@ -147,10 +145,10 @@ export default function Community() {
                             error ? <MessageBox variant='danger'>{error}</MessageBox>
                                 :
                                 <Swiper
-                                    slidesPerView={isMobile ? 1 : 5}
+                                    slidesPerView={isMobile ? 1 : 'auto'}
                                     spaceBetween={50}
-                                    centeredSlidesBounds={false}
-                                    rewind={false}
+                                    centeredSlides={true}
+                                    loop={true}
                                     pagination={{
                                         type: 'fraction',
                                     }}
